@@ -114,7 +114,6 @@ jobs:
           # base for tags
           images: |
             ${{env.IMAGE}}/zauth
-            ${{env.IMAGE}}/zauth
             ${{env.IMAGE}}/zauth.app
 
           tags: |
