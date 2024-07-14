@@ -13,7 +13,7 @@ jobs:
         with:
           route: POST /repos/z-auth/ci/actions/workflows/:workflow_id/dispatches
           token: ${{ secrets.GITHUB_TOKEN }}
-          workflow_id:
+          workflow_id: "hello-triggered.yml"
           client_payload: '{"name": "Trigger"}' # Example payload; replace with your inputs
           inputs: |
             ref: ${{ github.ref }}
