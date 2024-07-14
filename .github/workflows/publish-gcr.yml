@@ -132,7 +132,8 @@ jobs:
           tags: ${{ steps.tags.outputs.content }}
           labels: ${{ steps.labels.outputs.content}}
           # build-args: HUGGINGFACE_TOKEN=${{secrets.HUGGINGFACE_TOKEN}}
-          github-token: ${{github.token}}
+          # github-token: ${{github.token}}
+          github-token: ${{secrets.TOKEN_GITHUB}}
           # cache-from: type=registry,ref=user/app:latest
           # cache-to: type=inline
           # cache-from: type=registry,ref=user/app:buildcache
