@@ -106,41 +106,20 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-          # https://github.com/marketplace/actions/docker-metadata-action#images-input
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          # base for tags
-          images: |
-            ${{env.IMAGE}}/zauth
-            ${{env.IMAGE}}/zauth.app
-
-          tags: |
-
-            # set latest tag for main branch
-            # type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
-
-            type=raw,value=latest,enable={{is_default_branch}}
-
-            type=ref,event=branch
-            type=ref,event=tag
-            type=ref,event=pr
-
-            type=schedule
-            type=sha,format=short
-
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-
-      - name: Evaluate all tags
-        run: |
-
-          echo meta tags
-          echo "${{ steps.meta.outputs.tags }}"
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
+
+      - name: Read tags
+        id: tags
+        uses: jaywcjlove/github-action-read-file@main
+        with:
+          path: tags.txt
+
+      - name: Read labels
+        id: labels
+        uses: jaywcjlove/github-action-read-file@main
+        with:
+          path: labels.txt
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -149,8 +128,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           # push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels}}
+          tags: ${{ steps.tags.outputs.tags }}
+          labels: ${{ steps.labels.outputs.labels}}
           # build-args: HUGGINGFACE_TOKEN=${{secrets.HUGGINGFACE_TOKEN}}
           github-token: ${{github.token}}
           # cache-from: type=registry,ref=user/app:latest
