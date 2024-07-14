@@ -1,0 +1,8 @@
+org.opencontainers.image.created=2024-07-14T08:03:29.439Z
+org.opencontainers.image.description=
+org.opencontainers.image.licenses=
+org.opencontainers.image.revision=b438ebc3b270bedb4267064528e30a74fa5e4c05
+org.opencontainers.image.source=https://github.com/z-auth/zauth
+org.opencontainers.image.title=zauth
+org.opencontainers.image.url=https://github.com/z-auth/zauth
+org.opencontainers.image.version=ci-trigger-public-pipeline
