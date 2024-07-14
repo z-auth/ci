@@ -1,7 +1,7 @@
-org.opencontainers.image.created=2024-07-14T08:03:29.439Z
+org.opencontainers.image.created=2024-07-14T08:13:23.257Z
 org.opencontainers.image.description=
 org.opencontainers.image.licenses=
-org.opencontainers.image.revision=b438ebc3b270bedb4267064528e30a74fa5e4c05
+org.opencontainers.image.revision=c031e38fa7c96d8faf7e49306dfe514483c3abcf
 org.opencontainers.image.source=https://github.com/z-auth/zauth
 org.opencontainers.image.title=zauth
 org.opencontainers.image.url=https://github.com/z-auth/zauth
