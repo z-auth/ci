@@ -120,7 +120,7 @@ jobs:
 
       - name: Actor
         run: |
-          echo ${github.actor}
+          echo ${{github.actor}}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
