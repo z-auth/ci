@@ -1,4 +1,4 @@
-ghcr.io/z-auth/zauth.app:ci-trigger-public-pipeline
-ghcr.io/z-auth/zauth.app:sha-b438ebc
-ghcr.io/z-auth/zauth:ci-trigger-public-pipeline
-ghcr.io/z-auth/zauth:sha-b438ebc
+ghcr.io/z-auth/zauth:chore-update-svelte
+ghcr.io/z-auth/zauth:sha-9f8fd75
+ghcr.io/z-auth/zauth.app:chore-update-svelte
+ghcr.io/z-auth/zauth.app:sha-9f8fd75
