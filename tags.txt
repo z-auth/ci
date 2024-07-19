@@ -1,4 +1,4 @@
-ghcr.io/z-auth/zauth.app:ci-trigger-public-pipeline
-ghcr.io/z-auth/zauth.app:sha-b438ebc
-ghcr.io/z-auth/zauth:ci-trigger-public-pipeline
-ghcr.io/z-auth/zauth:sha-b438ebc
+ghcr.io/z-auth/zauth:feat-settings
+ghcr.io/z-auth/zauth:sha-f26ca5f
+ghcr.io/z-auth/zauth.app:feat-settings
+ghcr.io/z-auth/zauth.app:sha-f26ca5f
