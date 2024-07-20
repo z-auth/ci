@@ -1,4 +1,4 @@
-ghcr.io/z-auth/zauth.app:ci-trigger-public-pipeline
-ghcr.io/z-auth/zauth.app:sha-b438ebc
-ghcr.io/z-auth/zauth:ci-trigger-public-pipeline
-ghcr.io/z-auth/zauth:sha-b438ebc
+ghcr.io/z-auth/zauth:chore-e2e-settings
+ghcr.io/z-auth/zauth:sha-588fd53
+ghcr.io/z-auth/zauth.app:chore-e2e-settings
+ghcr.io/z-auth/zauth.app:sha-588fd53
