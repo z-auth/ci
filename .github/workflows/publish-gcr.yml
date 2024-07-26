@@ -30,6 +30,7 @@ on:
 #   cancel-in-progress: false
 
 env:
+  REPO: ${{github.repository_owner}}/zauth
   REGISTRY: ghcr.io
   IMAGE: ghcr.io/${{github.repository_owner}}
 
@@ -90,7 +91,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          repository: z-auth/zauth
+          repository: ${{env.REPO_1}}
           token: ${{ secrets.TOKEN_GITHUB }}
           fetch-depth: 1
           # fetch-tags: true
