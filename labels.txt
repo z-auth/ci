@@ -1,8 +1,8 @@
-org.opencontainers.image.created=2024-07-14T08:03:29.439Z
+org.opencontainers.image.created=2024-07-29T02:24:30.667Z
 org.opencontainers.image.description=
 org.opencontainers.image.licenses=
-org.opencontainers.image.revision=b438ebc3b270bedb4267064528e30a74fa5e4c05
+org.opencontainers.image.revision=12526e632ec439852aae615d9f33e3d78cbf30c6
 org.opencontainers.image.source=https://github.com/z-auth/zauth
 org.opencontainers.image.title=zauth
 org.opencontainers.image.url=https://github.com/z-auth/zauth
-org.opencontainers.image.version=ci-trigger-public-pipeline
+org.opencontainers.image.version=hotfix-v0.16.0-kaggle-going-to-X
