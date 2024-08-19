@@ -1,6 +1,4 @@
-ghcr.io/z-auth/zauth:main
-ghcr.io/z-auth/zauth:latest
-ghcr.io/z-auth/zauth:sha-bcbe444
-ghcr.io/z-auth/zauth.app:main
-ghcr.io/z-auth/zauth.app:latest
-ghcr.io/z-auth/zauth.app:sha-bcbe444
+ghcr.io/z-auth/zauth:chore-vite-fixes-with-preview
+ghcr.io/z-auth/zauth:sha-c755289
+ghcr.io/z-auth/zauth.app:chore-vite-fixes-with-preview
+ghcr.io/z-auth/zauth.app:sha-c755289

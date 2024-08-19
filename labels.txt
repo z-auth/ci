@@ -1,8 +1,8 @@
-org.opencontainers.image.created=2024-07-29T02:32:54.320Z
+org.opencontainers.image.created=2024-08-19T23:43:07.808Z
 org.opencontainers.image.description=
 org.opencontainers.image.licenses=
-org.opencontainers.image.revision=bcbe444aebe98109fd15fa0f4905198ae721ef04
+org.opencontainers.image.revision=c75528991b1d6eaef0551804d4029e68058af736
 org.opencontainers.image.source=https://github.com/z-auth/zauth
 org.opencontainers.image.title=zauth
 org.opencontainers.image.url=https://github.com/z-auth/zauth
-org.opencontainers.image.version=main
+org.opencontainers.image.version=chore-vite-fixes-with-preview
